@@ -9,4 +9,4 @@
 void Alarm(int, int = 10);
 int MenuIncrement(int);
 void DecToBin(int);
-void Fibonacci(int, int, static int);
+int Fibonacci(int, int, static int);

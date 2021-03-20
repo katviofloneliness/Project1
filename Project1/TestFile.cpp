@@ -3,12 +3,12 @@
 
 using namespace std;
 
-void Alarm(int level, int exit )
+void Alarm(int level, int exit ) // Alarm
 {
     cout << "Alarm level: " << level << ". Move to exit num " << exit << endl;
 }
 
-int MenuIncrement(int a)
+int MenuIncrement(int a) // Value change on button press / Dumb menu
 {
     while (5)
     {
@@ -39,11 +39,11 @@ void DecToBin(int number) // Changes integer decimal to binary (recurence)
     return;
 }
 
-void Fibonacci(int first, int second, static int counter ) // Fibonacci 
+int Fibonacci(int first, int second, static int counter ) // Fibonacci / sum of 2 numbers
 {
     if ((first == 0 and second == 0) or counter <= 0) { first = 0, second = 1, counter = 30; }
-    if (counter == 1) { cout << first << " "; }
-    else if (counter == 2) { cout << first << " " << second << " "; }
+    if (counter == 1) { cout << first << " "; return first; }
+    else if (counter == 2) { cout << first << " " << second << " "; return second; }
     else if (counter >= 2)
     {
         int sum = first + second;
